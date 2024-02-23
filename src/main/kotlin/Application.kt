@@ -8,8 +8,6 @@ import io.ktor.server.netty.*
 import io.ktor.server.routing.*
 import kotlinx.html.*
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 fun main() {
 
     embeddedServer(Netty, port=8080) {
