@@ -9,7 +9,6 @@ import io.ktor.server.routing.*
 import kotlinx.html.*
 
 fun main() {
-
     embeddedServer(Netty, port=8080) {
         module()
     }.start(wait = true)
