@@ -8,7 +8,9 @@ class ConverterTest {
 
     @Test
     fun createDiv() {
-        val input = """<div>Hello world</div>""".trimIndent()
+        val input = """
+            <div>Hello world</div>
+        """.trimIndent()
 
 
         val expectedOutput = """
@@ -19,7 +21,8 @@ class ConverterTest {
         """.trimIndent()
 
         val output = convert(input)
-
+        println("expectedOutput $expectedOutput")
+        println("output $output")
         assertEquals(expectedOutput, output)
     }
 }
